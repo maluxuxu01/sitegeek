@@ -1,0 +1,235 @@
+
+:root {
+    --bg-dark: #0d021a;
+    --card-bg: #1a0933;
+    --neon-purple: #a855f7;
+    --neon-green: #39ff14;
+    --text-color: #f1f5f9;
+    --border-neon: #a855f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+header {
+    background-color: #120324;
+    border-bottom: 2px solid var(--neon-purple);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.logo {
+    max-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--neon-green);
+    box-shadow: 0 0 10px var(--neon-green);
+}
+
+h1 {
+    color: var(--neon-green);
+    text-shadow: 0 0 8px var(--neon-green);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green);
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1000px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-neon);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+h2 {
+    color: var(--neon-purple);
+    border-bottom: 2px solid var(--neon-purple);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--neon-purple);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #240d45;
+    border: 1px solid var(--neon-green);
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--neon-green);
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+figcaption h3 {
+    color: var(--neon-green);
+    margin-bottom: 8px;
+}
+
+figcaption p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #120324;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #3b1570;
+}
+
+th {
+    background-color: #2a0954;
+    color: var(--neon-green);
+    text-shadow: 0 0 5px var(--neon-green);
+}
+
+tr:nth-child(even) {
+    background-color: #180530;
+}
+
+.rarity-ball {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.ball-common {
+    background-color: #a1a1aa;
+    box-shadow: 0 0 8px #a1a1aa;
+}
+
+.ball-rare {
+    background-color: #3b82f6;
+    box-shadow: 0 0 8px #3b82f6;
+}
+
+.ball-epic {
+    background-color: #a855f7;
+    box-shadow: 0 0 8px #a855f7;
+}
+
+.ball-legendary {
+    background-color: #eab308;
+    box-shadow: 0 0 10px #eab308;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #94a3b8;
+    border-top: 1px solid var(--neon-purple);
+}
+
